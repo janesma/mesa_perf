@@ -35,7 +35,12 @@
     <!-- each project has a matching subdirectory with a build.py
          which automates the build.  -->
 
-    <project name="mesa-perf"/>
+    <project name="mesa-perf">
+      <prerequisite name="mesa_skl" hardware="builder"/>
+    </project>
+
+    <project name="mesa_skl"/>
+    
     <project name="egypt">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
@@ -125,9 +130,14 @@
     </mesa>
 
     <mesa_perf repo="git://github.com/janesma/mesa_perf.git"/>
-    <mesa_ci repo="git://github.com/janesma/mesa_ci.git"
-             branch="perf_master"/>
+    <mesa_ci repo="git://github.com/janesma/mesa_jenkins.git"/>
+    <sixonix repo="git://github.com/janesma/sixonix"
+             branch="origin/mesa_ci"/>
 
   </repos>
+
+  <branches>
+    <branch name="mesa_master"/>
+  </branches>
 
 </build_specification>
