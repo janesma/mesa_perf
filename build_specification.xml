@@ -1,0 +1,133 @@
+<!--  Copyright (C) Intel Corp.  2014.  All Rights Reserved. -->
+
+<!--  Permission is hereby granted, free of charge, to any person obtaining -->
+<!--  a copy of this software and associated documentation files (the -->
+<!--  "Software"), to deal in the Software without restriction, including -->
+<!--  without limitation the rights to use, copy, modify, merge, publish, -->
+<!--  distribute, sublicense, and/or sell copies of the Software, and to -->
+<!--  permit persons to whom the Software is furnished to do so, subject to -->
+<!--  the following conditions: -->
+
+<!--  The above copyright notice and this permission notice (including the -->
+<!--  next paragraph) shall be included in all copies or substantial -->
+<!--  portions of the Software. -->
+
+<!--  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, -->
+<!--  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF -->
+<!--  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. -->
+<!--  IN NO EVENT SHALL THE COPYRIGHT OWNER(S) AND/OR ITS SUPPLIERS BE -->
+<!--  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION -->
+<!--  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION -->
+<!--  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+<!--   **********************************************************************/ -->
+<!--   * Authors: -->
+<!--   *   Mark Janes <mark.a.janes@intel.com> -->
+<!--   **********************************************************************/ -->
+
+<build_specification>
+  <build_master host="otc-mesa-android.jf.intel.com" results_dir="/mnt/jenkins/results"
+                hostname="otc-mesa-android"/>
+
+  <!-- specified the dependency relationships between projects -->
+  <projects>
+    
+    <!-- each project has a matching subdirectory with a build.py
+         which automates the build.  -->
+
+    <project name="mesa-perf"/>
+    <project name="egypt">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="egypt_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="fill">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="fill_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="fur">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="heaven">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="manhattan">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="manhattan_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="car_chase">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="car_chase_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="tess">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="tess_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="plot3d">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="scripts">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="sixonix">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="synmark_a">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="synmark_b">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="synmark_c">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="trex">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="trex_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="triangle">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="valley">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="warsow">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="xonotic">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="dota-pts">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+      <prerequisite name="apitrace" config="release" hardware="builder"/>
+    </project>
+
+    <project name="perf-all">
+    </project>
+    <!-- Performance projects END -->
+
+  </projects>
+
+  <!-- the following servers and remotes correspond to projects -->
+  <repos>
+    <mesa repo="git://github.com/mesa3d/mesa.git">
+    </mesa>
+
+    <mesa_perf repo="git://github.com/janesma/mesa_perf.git"/>
+    <mesa_ci repo="git://github.com/janesma/mesa_ci.git"
+             branch="perf_master"/>
+
+  </repos>
+
+</build_specification>
