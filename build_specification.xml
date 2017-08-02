@@ -37,6 +37,7 @@
 
     <project name="mesa-perf">
       <prerequisite name="mesa_skl" hardware="builder"/>
+      <prerequisite name="mesa_bxt" hardware="builder"/>
     </project>
 
     <project name="mesa_skl"/>
