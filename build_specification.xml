@@ -41,6 +41,7 @@
     </project>
 
     <project name="mesa_skl"/>
+    <project name="mesa_bxt"/>
     
     <project name="egypt">
       <prerequisite name="mesa-perf" hardware="builder"/>
