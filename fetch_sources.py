@@ -9,7 +9,10 @@ if not os.path.exists(build_support_dir):
     repo_dir = os.path.split(build_support_dir)[0]
     if not os.path.exists(repo_dir):
         os.makedirs(repo_dir)
-    git.Repo.clone_from("git://github.com/janesma/mesa_ci.git", build_support_dir)
+    try:
+        git.Repo.clone_from("git://otc-mesa-android.local/git/mesa_ci/origin", build_support_dir)
+    except:
+        git.Repo.clone_from("git://github.com/janesma/mesa_ci.git", build_support_dir)
 
 sys.path.append(build_support_dir)
 import build_support as bs
