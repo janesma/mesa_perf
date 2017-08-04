@@ -117,8 +117,16 @@
     </project>
 
     <project name="perf-all">
+      <prerequisite name="tess" hardware="bxt"/>
+      <prerequisite name="tess_o" hardware="bxt"/>
+      <prerequisite name="car_chase" hardware="bxt"/>
+      <prerequisite name="car_chase_o" hardware="bxt"/>
+      <prerequisite name="trex" hardware="bxt"/>
+      <prerequisite name="trex_o" hardware="bxt"/>
       <prerequisite name="manhattan" hardware="bxt"/>
       <prerequisite name="manhattan_o" hardware="bxt"/>
+      <prerequisite name="heaven" hardware="bxt"/>
+      <prerequisite name="valley" hardware="bxt"/>
     </project>
     <!-- Performance projects END -->
 
