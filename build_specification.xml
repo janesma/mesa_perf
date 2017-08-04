@@ -142,7 +142,7 @@
     <branch name="mesa_master" project="perf-all">
       <mesa/>
       <mesa_ci/>
-      <sixonix branch="mesa_ci"/>
+      <sixonix branch="origin/mesa_ci"/>
     </branch>
   </branches>
 
