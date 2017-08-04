@@ -115,12 +115,10 @@
     <project name="xonotic">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
-    <project name="dota-pts">
-      <prerequisite name="mesa-perf" hardware="builder"/>
-      <prerequisite name="apitrace" config="release" hardware="builder"/>
-    </project>
 
     <project name="perf-all">
+      <prerequisite name="manhattan" hardware="bxt"/>
+      <prerequisite name="manhattan_o" hardware="bxt"/>
     </project>
     <!-- Performance projects END -->
 
