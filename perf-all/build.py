@@ -40,7 +40,7 @@ class MesaStats:
         # canoninical path is
         # /mnt/jenkins/results/perf/mesa={rev}/m64/scores/{benchmark}/{platform}/{date}.json:
         all_scores = {}
-        score_glob = "/mnt/jenkins/results/perf/mesa=*/m64/scores/*/*/*.json"
+        score_glob = "/mnt/jenkins/results/mesa_master/mesa=*/m64/scores/*/*/*.json"
         for a_score_file in glob.glob(score_glob):
             with open(a_score_file, "r") as f:
                 a_score = json.load(f)
@@ -93,7 +93,7 @@ class MesaStats:
                 if UFO_score:
                     platform[platform_name]["UFO"] = UFO_score
 
-        with open("/mnt/jenkins/results/perf/scores.json", "w") as of:
+        with open("/mnt/jenkins/results/mesa_master/scores.json", "w") as of:
             json.dump(all_scores, fp=of)
 
     def build(self):
