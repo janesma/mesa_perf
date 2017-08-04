@@ -139,7 +139,11 @@
   </repos>
 
   <branches>
-    <branch name="mesa_master"/>
+    <branch name="mesa_master" project="perf-all">
+      <mesa/>
+      <mesa_ci/>
+      <sixonix branch="mesa_ci"/>
+    </branch>
   </branches>
 
 </build_specification>
