@@ -9,11 +9,25 @@ if not os.path.exists(build_support_dir):
     repo_dir = os.path.split(build_support_dir)[0]
     if not os.path.exists(repo_dir):
         os.makedirs(repo_dir)
+    success = False
     try:
         git.Repo.clone_from("git://otc-mesa-android.local/git/mesa_ci/origin", build_support_dir)
+        success = True
     except:
-        git.Repo.clone_from("git://github.com/janesma/mesa_ci.git", build_support_dir)
-
+        success = False
+    if not success:
+        try:
+            git.Repo.clone_from("git://otc-mesa-android.jf.intel.com/git/mesa_ci/origin", build_support_dir)
+            success = True
+        except:
+            success = False
+    if not success:
+        try:
+            git.Repo.clone_from("git://github.com/janesma/mesa_ci.git", build_support_dir)
+            success = True
+        except:
+            print "ERROR: could not clone sources"
+            
 sys.path.append(build_support_dir)
 import build_support as bs
 
