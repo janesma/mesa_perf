@@ -7,5 +7,5 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-bs.build(bs.PerfBuilder("tess", iterations=2))
+bs.build(bs.PerfBuilder("trex_o", iterations=2, windowed=True))
 

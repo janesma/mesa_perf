@@ -7,7 +7,7 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-def iterations(_, hw):
+def iterations(2, hw):
     if hw == "bdw":
         return 7
 
