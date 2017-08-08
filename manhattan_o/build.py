@@ -7,5 +7,5 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-bs.build(bs.PerfBuilder("manhattan_o", iterations=7))
+bs.build(bs.PerfBuilder("manhattan_o", iterations=2))
 

@@ -128,7 +128,18 @@
       <prerequisite name="heaven" hardware="bxt"/>
       <prerequisite name="valley" hardware="bxt"/>
     </project>
-    <!-- Performance projects END -->
+
+    <project name="perf-win">
+      <!-- <prerequisite name="tess" hardware="bxt500win-01"/> -->
+      <!-- <prerequisite name="tess_o" hardware="bxt500win-01"/> -->
+      <!-- <prerequisite name="car_chase" hardware="bxt500win-01"/> -->
+      <!-- <prerequisite name="car_chase_o" hardware="bxt500win-01"/> -->
+      <!-- <prerequisite name="trex" hardware="bxt500win-01"/> -->
+      <!-- <prerequisite name="trex_o" hardware="bxt500win-01"/> -->
+      <prerequisite name="manhattan" hardware="bxt500win-01"/>
+      <prerequisite name="manhattan_windowed" hardware="bxt500win-01"/>
+      <prerequisite name="manhattan_o" hardware="bxt500win-01"/>
+    </project>
 
   </projects>
 

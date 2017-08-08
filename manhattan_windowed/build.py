@@ -17,6 +17,6 @@ class ManhattanTimeout:
             base_time = base_time * 5
         return base_time
 
-bs.build(bs.PerfBuilder("manhattan", iterations=1, windowed=True),
+bs.build(bs.PerfBuilder("manhattan", iterations=2, windowed=True),
          time_limit=ManhattanTimeout())
 
