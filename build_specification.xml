@@ -64,6 +64,9 @@
     <project name="manhattan">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
+    <project name="manhattan_windowed">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
     <project name="manhattan_o">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
