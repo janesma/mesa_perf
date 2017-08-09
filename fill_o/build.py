@@ -7,10 +7,5 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-def iterations(2, hw):
-    if hw == "bdw":
-        return 7
-
-bs.build(bs.PerfBuilder("fill_o", iterations=5,
-                        custom_iterations_fn=iterations))
+bs.build(bs.PerfBuilder("fill_o", iterations=2))
 
