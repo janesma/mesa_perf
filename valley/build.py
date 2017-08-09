@@ -7,7 +7,7 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-bs.build(bs.PerfBuilder("valley", iterations=2,
+bs.build(bs.PerfBuilder("valley", iterations=5,
                         env={"allow_glsl_extension_directive_midshader":"true",
                              "dual_color_blend_by_location":"true"}))
 
