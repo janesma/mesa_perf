@@ -138,6 +138,10 @@
       <prerequisite name="trex_o" hardware="bxt500win-01,sklgt4ewin-05"/>
       <prerequisite name="manhattan" hardware="bxt500win-01,sklgt4ewin-05"/>
       <prerequisite name="manhattan_o" hardware="bxt500win-01,sklgt4ewin-05"/>
+      <prerequisite name="alu2" hardware="bxt500win-01,sklgt4ewin-05"/>
+      <prerequisite name="alu2_o" hardware="bxt500win-01,sklgt4ewin-05"/>
+      <prerequisite name="driver2" hardware="bxt500win-01,sklgt4ewin-05"/>
+      <prerequisite name="driver2_o" hardware="bxt500win-01,sklgt4ewin-05"/>
       <prerequisite name="fill_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
       <prerequisite name="fill_o_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
       <prerequisite name="tess_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
@@ -148,6 +152,10 @@
       <prerequisite name="trex_o_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
       <prerequisite name="manhattan_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
       <prerequisite name="manhattan_o_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
+      <prerequisite name="alu2_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
+      <prerequisite name="alu2_o_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
+      <prerequisite name="driver2_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
+      <prerequisite name="driver2_o_windowed" hardware="bxt500win-02,sklgt4ewin-05"/>
     </project>
 
   </projects>
