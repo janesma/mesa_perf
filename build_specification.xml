@@ -103,6 +103,30 @@
     <project name="trex_o_windowed">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
+    <project name="alu2">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="alu2_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="alu2_windowed">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="alu2_o_windowed">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="driver2">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="driver2_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="driver2_windowed">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="driver2_o_windowed">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
 
     <project name="perf-all">
       <prerequisite name="fill" hardware="bxt500-01,sklgt4e-05"/>
