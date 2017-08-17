@@ -131,6 +131,10 @@
     <project name="perf-all">
       <prerequisite name="fill" hardware="bxt500-01,sklgt4e-05"/>
       <prerequisite name="fill_o" hardware="bxt500-01,sklgt4e-05"/>
+      <prerequisite name="alu2" hardware="bxt500-01,sklgt4e-05"/>
+      <prerequisite name="alu2_o" hardware="bxt500-01,sklgt4e-05"/>
+      <prerequisite name="driver2" hardware="bxt500-01,sklgt4e-05"/>
+      <prerequisite name="driver2_o" hardware="bxt500-01,sklgt4e-05"/>
       <prerequisite name="tess" hardware="bxt500-01,sklgt4e-05"/>
       <prerequisite name="tess_o" hardware="bxt500-01,sklgt4e-05"/>
       <prerequisite name="car_chase" hardware="bxt500-01,sklgt4e-05"/>
@@ -141,6 +145,10 @@
       <prerequisite name="manhattan_o" hardware="bxt500-01,sklgt4e-05"/>
       <prerequisite name="fill_windowed" hardware="bxt500-02,sklgt4e-05"/>
       <prerequisite name="fill_o_windowed" hardware="bxt500-02,sklgt4e-05"/>
+      <prerequisite name="alu2_windowed" hardware="bxt500-02,sklgt4e-05"/>
+      <prerequisite name="alu2_o_windowed" hardware="bxt500-02,sklgt4e-05"/>
+      <prerequisite name="driver2_windowed" hardware="bxt500-02,sklgt4e-05"/>
+      <prerequisite name="driver2_o_windowed" hardware="bxt500-02,sklgt4e-05"/>
       <prerequisite name="tess_windowed" hardware="bxt500-02,sklgt4e-05"/>
       <prerequisite name="tess_o_windowed" hardware="bxt500-02,sklgt4e-05"/>
       <prerequisite name="car_chase_windowed" hardware="bxt500-02,sklgt4e-05"/>
