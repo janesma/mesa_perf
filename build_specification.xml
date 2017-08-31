@@ -38,10 +38,12 @@
     <project name="mesa-perf">
       <prerequisite name="mesa_skl" hardware="builder"/>
       <prerequisite name="mesa_bxt" hardware="builder"/>
+      <prerequisite name="mesa_kbl" hardware="builder"/>
     </project>
 
     <project name="mesa_skl"/>
     <project name="mesa_bxt"/>
+    <project name="mesa_kbl"/>
     
     <project name="fill">
       <prerequisite name="mesa-perf" hardware="builder"/>
