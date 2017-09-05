@@ -1,6 +1,19 @@
+function get_hw(dataset) {
+    var hardwares = [];
+    for (var bench in dataset) {
+	for (var hardware in dataset[bench]) {
+	    var lin_hardware = hardware.replace("win","");
+	    if (! hardwares.includes(lin_hardware)) {
+		hardwares.push(lin_hardware);
+	    }
+	}
+    }
+    return hardwares;
+}
+
 function do_plot(bench_name, placeholder_id, click_id, dataset) {
     data = []
-    var hardwares = ["skl", "bdw", "bsw", "bxt"];
+    var hardwares = get_hw(dataset);
     var colors = ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"];
     var len = hardwares.length;
     var ymax = 0;
@@ -13,7 +26,7 @@ function do_plot(bench_name, placeholder_id, click_id, dataset) {
         var data_points = {
             errorbars: "y",
             show: true,
-			yerr: {show:true, upperCap: "-", lowerCap: "-", color: colors[i]},
+	    yerr: {show:true, upperCap: "-", lowerCap: "-", color: colors[i]},
             lineWidth: 1
         }
         
@@ -41,8 +54,9 @@ function do_plot(bench_name, placeholder_id, click_id, dataset) {
     var markings = []
     for (var i = 0; i < len; i++) {
         var hardware = hardwares[i];
-        if (hardware in dataset[bench_name] && "UFO" in dataset[bench_name][hardware]) {
-            var ufo_score = dataset[bench_name][hardware]["UFO"];
+	var win_hardware = hardware.concat("win");
+        if (win_hardware in dataset[bench_name] && "UFO" in dataset[bench_name][win_hardware]) {
+            var ufo_score = dataset[bench_name][win_hardware]["UFO"];
             markings.push({ color: colors[i], lineWidth: 2,
                             yaxis: { from: ufo_score, to: ufo_score } });
             if (ufo_score > ymax) {
@@ -51,7 +65,7 @@ function do_plot(bench_name, placeholder_id, click_id, dataset) {
         }
     }
     ymax = Math.round(ymax * 10.0 + 0.5) / 10.0;
-	var plot = $.plot(placeholder_id, data, {
+    var plot = $.plot(placeholder_id, data, {
         series: {
             lines: {
                 show: true
@@ -61,35 +75,36 @@ function do_plot(bench_name, placeholder_id, click_id, dataset) {
             }
         },
     	grid: {
-			hoverable: false,
-			clickable: true,
+	    hoverable: false,
+	    clickable: true,
             markings: markings
-		},
-		yaxis: {
-			min: 0.0,
+	},
+	yaxis: {
+	    min: 0.0,
             max: ymax,
             zoomRange: false
-		},
-		xaxis: {
-			mode: "time",
-	        minTickSize: [1, "day"]
-		},
-		legend: {
-			position: "se"
-		},
+	},
+	xaxis: {
+	    mode: "time",
+	    minTickSize: [1, "day"]
+	},
+	legend: {
+	    position: "se"
+	},
         zoom: {
-			interactive: true
-		},
-		pan: {
-			interactive: true
-		}
+	    interactive: true
+	},
+	pan: {
+	    interactive: true
+	}
     });
 
-	var placeholder = $(placeholder_id);
+    var placeholder = $(placeholder_id);
     for (var i = 0; i < len; i++) {
         var hardware = hardwares[i];
-        if ((hardware in dataset[bench_name]) && ("UFO" in dataset[bench_name][hardware])) {
-            var ufo_score = dataset[bench_name][hardware]["UFO"];
+	var win_hardware = hardware.concat("win");
+        if ((win_hardware in dataset[bench_name]) && ("UFO" in dataset[bench_name][win_hardware])) {
+            var ufo_score = dataset[bench_name][win_hardware]["UFO"];
             var o = plot.pointOffset({ y: ufo_score });
             placeholder.append("<div style='position:absolute;left:50px;bottom:" +
                                (10 + (25 * (i + 1))).toString() + "px;color:" +
