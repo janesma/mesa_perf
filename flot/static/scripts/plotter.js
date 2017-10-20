@@ -14,7 +14,7 @@ function get_hw(dataset) {
 function do_plot(bench_name, placeholder_id, click_id, dataset) {
     data = []
     var hardwares = get_hw(dataset);
-    var colors = ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"];
+    var colors = ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed", "#154360"];
     var len = hardwares.length;
     var ymax = 0;
     for (var i = 0; i < len; i++) {
