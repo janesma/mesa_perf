@@ -7,5 +7,5 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-bs.build(bs.PerfBuilder("alu2_o", iterations=5))
+bs.build(bs.PerfBuilder("gfxbench5.alu2_o", iterations=5))
 
