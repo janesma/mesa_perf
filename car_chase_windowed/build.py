@@ -7,5 +7,5 @@ sys.path.append(path.join(path.dirname(path.abspath(sys.argv[0])), "..", "repos"
 import build_support as bs
 
 
-bs.build(bs.PerfBuilder("car_chase", iterations=5, windowed=True))
+bs.build(bs.PerfBuilder("gfxbench5.car_chase", iterations=5, windowed=True))
 
