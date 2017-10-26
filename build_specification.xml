@@ -36,7 +36,11 @@
          which automates the build.  -->
 
     <project name="mesa-perf">
+      <prerequisite name="mesa_bdw" hardware="builder"/>
+      <prerequisite name="mesa_bsw" hardware="builder"/>
+      <prerequisite name="mesa_bxt" hardware="builder"/>
       <prerequisite name="mesa_kbl" hardware="builder"/>
+      <prerequisite name="mesa_skl" hardware="builder"/>
     </project>
 
     <project name="mesa_skl"/>
