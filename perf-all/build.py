@@ -17,6 +17,9 @@ class MesaStats:
 
     def merge_scores(self, all_scores, score):
         for k,v in score.iteritems():
+            if "gfxbench5." in k:
+                # ugly stinking hack
+                k = k[10:]
             if k not in all_scores:
                 # initialize default
                 if isinstance(v, list):
