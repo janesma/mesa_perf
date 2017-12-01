@@ -137,16 +137,16 @@
     <project name="perf-all">
       <prerequisite name="tess" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="tess_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
-      <prerequisite name="car_chase" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
-      <prerequisite name="car_chase_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
+      <prerequisite name="car_chase" hardware="kblgt2-01,bxt500-01,bxt505-03,bdwgt3e-01,bsw-01"/>
+      <prerequisite name="car_chase_o" hardware="kblgt2-01,bxt500-01,bxt505-03,bdwgt3e-01,bsw-01"/>
       <prerequisite name="trex" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="trex_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="manhattan" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="manhattan_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="tess_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="tess_o_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
-      <prerequisite name="car_chase_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
-      <prerequisite name="car_chase_o_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
+      <prerequisite name="car_chase_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,bdwgt3e-01,bsw-02"/>
+      <prerequisite name="car_chase_o_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,bdwgt3e-01,bsw-02"/>
       <prerequisite name="trex_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="trex_o_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="manhattan_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt4e-01,bdwgt3e-01,bsw-02"/>
