@@ -192,7 +192,10 @@
       <remote name="janesma" repo="git://github.com/janesma/mesa"/>
     </mesa>
 
-    <mesa_perf repo="git://github.com/janesma/mesa_perf.git"/>
+    <mesa_perf repo="git://github.com/janesma/mesa_perf.git">
+      <remote name="tokonbekov" repo="https://github.com/tokonbekov/mesa_perf.git"/>
+    </mesa_perf>
+
     <mesa_ci repo="git://github.com/janesma/mesa_ci.git"/>
     <sixonix repo="git://github.com/janesma/sixonix"
              branch="origin/jekstrand"/>
