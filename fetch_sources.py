@@ -44,10 +44,10 @@ if not os.path.exists(build_support_dir):
         os.makedirs(repo_dir)
 
     try:
-        try_clone("git://otc-mesa-android.local/git/mesa_ci/origin")
+        try_clone("git://otc-mesa-android.local/git/mesa_ci")
     except git.exc.GitCommandError:
         try:
-            try_clone("git://otc-mesa-android.jf.intel.com/git/mesa_ci/origin")
+            try_clone("git://otc-mesa-android.jf.intel.com/git/mesa_ci")
         except git.exc.GitCommandError:
             try:
                 try_clone("git://github.com/janesma/mesa_ci.git")
