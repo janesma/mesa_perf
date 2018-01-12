@@ -188,6 +188,8 @@
       <prerequisite name="clean-workspace"
                     hardware="bdwgt3e-01,bsw-01,bsw-02,bxt500-01,bxt500-02,bxt505-02,bxt505-03,kblgt2-01,kblgt2-02,sklgt2-01,sklgt2-02,sklgt2-03,sklgt2-04,sklgt4e-01,sklgt4e-05"/>
     </project>
+    <project name="clean-workspace"/>
+
   </projects>
 
   <!-- the following servers and remotes correspond to projects -->
