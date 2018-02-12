@@ -200,10 +200,12 @@
 
     <mesa_perf repo="git://github.com/janesma/mesa_perf.git">
       <remote name="tokonbekov" repo="https://github.com/tokonbekov/mesa_perf.git"/>
+      <remote name="craftyguy" repo="https://github.com/craftyguy/mesa_perf.git"/>
     </mesa_perf>
 
     <mesa_ci repo="git://github.com/janesma/mesa_ci.git">
       <remote name="tokonbekov" repo="https://github.com/tokonbekov/mesa_ci.git"/>
+      <remote name="craftyguy" repo="https://github.com/craftyguy/mesa_ci.git"/>
     </mesa_ci>
 
     <sixonix repo="git://github.com/janesma/sixonix"
