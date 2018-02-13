@@ -49,6 +49,9 @@
     <project name="mesa_bxt"/>
     <project name="mesa_kbl"/>
     
+    <project name="aztec_ruins_gl_normal">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
     <project name="fill">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
@@ -77,6 +80,9 @@
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
     <project name="trex_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
+    <project name="aztec_ruins_gl_normal_windowed">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
     <project name="fill_windowed">
@@ -135,6 +141,7 @@
     </project>
 
     <project name="perf-all">
+      <prerequisite name="aztec_ruins_gl_normal" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="tess" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="tess_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="car_chase" hardware="kblgt2-01,bxt500-01,bxt505-03,bdwgt3e-01,bsw-01"/>
@@ -143,6 +150,7 @@
       <prerequisite name="trex_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="manhattan" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
       <prerequisite name="manhattan_o" hardware="kblgt2-01,bxt500-01,bxt505-03,sklgt4e-05,bdwgt3e-01,bsw-01"/>
+      <prerequisite name="aztec_ruins_gl_normal_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt2-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="tess_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt2-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="tess_o_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,sklgt2-01,bdwgt3e-01,bsw-02"/>
       <prerequisite name="car_chase_windowed" hardware="kblgt2-02,bxt500-02,bxt505-02,bdwgt3e-01,bsw-02"/>
@@ -154,6 +162,7 @@
     </project>
 
     <project name="perf-win">
+      <prerequisite name="aztec_ruins_gl_normal" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
       <prerequisite name="fill" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
       <prerequisite name="fill_o" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
       <prerequisite name="tess" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
@@ -168,6 +177,7 @@
       <prerequisite name="alu2_o" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
       <prerequisite name="driver2" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-01"/>
       <prerequisite name="driver2_o" hardware="kblgt2win-01,bxt500win-01,bxt505win-03,sklgt4ewin-05,bdwgt3ewin-01,bswwin-02"/>
+      <prerequisite name="aztec_ruins_gl_normal_windowed" hardware="kblgt2win-02,bxt500win-02,bxt505win-02,sklgt4ewin-01,bdwgt3ewin-01,bswwin-02"/>
       <prerequisite name="fill_windowed" hardware="kblgt2win-02,bxt500win-02,bxt505win-02,sklgt4ewin-01,bdwgt3ewin-01,bswwin-02"/>
       <prerequisite name="fill_o_windowed" hardware="kblgt2win-02,bxt500win-02,bxt505win-02,sklgt4ewin-01,bdwgt3ewin-01,bswwin-02"/>
       <prerequisite name="tess_windowed" hardware="kblgt2win-02,bxt500win-02,bxt505win-02,sklgt4ewin-01,bdwgt3ewin-01,bswwin-02"/>
