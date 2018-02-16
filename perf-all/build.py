@@ -17,9 +17,6 @@ class MesaStats:
 
     def merge_scores(self, all_scores, score):
         for k,v in score.iteritems():
-            if "gfxbench5." in k:
-                # ugly stinking hack
-                k = k[10:]
             if k not in all_scores:
                 # initialize default
                 if isinstance(v, list):
@@ -97,7 +94,7 @@ class MesaStats:
                     platform[platform_name]["UFO"] = UFO_score
 
         with open("/mnt/jenkins/results/mesa_master/scores.json", "w") as of:
-            json.dump(all_scores, fp=of)
+            json.dump(all_scores, fp=of, indent=2)
 
     def build(self):
         pass
