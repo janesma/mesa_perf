@@ -34,12 +34,6 @@ _ = MakoTemplates(APP)
 
 # pylint: disable=bad-whitespace
 _BENCHMARKS = [
-    ('gfxbench5_fill',                              'micro-benchmark'    ),
-    ('gfxbench5_fill_o',                            'micro-benchmark'    ),
-    ('gfxbench5_alu2',                              'micro-benchmark'    ),
-    ('gfxbench5_alu2_o',                            'micro-benchmark'    ),
-    ('gfxbench5_driver2',                           'micro-benchmark'    ),
-    ('gfxbench5_driver2_o',                         'micro-benchmark'    ),
     ('gfxbench5_manhattan',                         'synthetic-benchmark'),
     ('gfxbench5_manhattan_o',                       'synthetic-benchmark'),
     ('gfxbench5_car_chase',                         'synthetic-benchmark'),
@@ -49,12 +43,6 @@ _BENCHMARKS = [
     ('gfxbench5_trex',                              'synthetic-benchmark'),
     ('gfxbench5_trex_o',                            'synthetic-benchmark'),
     ('gfxbench5_aztec_ruins_gl_normal',             'synthetic-benchmark'),
-    ('gfxbench5_fill_windowed',                     'micro-benchmark'    ),
-    ('gfxbench5_fill_o_windowed',                   'micro-benchmark'    ),
-    ('gfxbench5_alu2_windowed',                     'micro-benchmark'    ),
-    ('gfxbench5_alu2_o_windowed',                   'micro-benchmark'    ),
-    ('gfxbench5_driver2_windowed',                  'micro-benchmark'    ),
-    ('gfxbench5_driver2_o_windowed',                'micro-benchmark'    ),
     ('gfxbench5_manhattan_windowed',                'synthetic-benchmark'),
     ('gfxbench5_manhattan_o_windowed',              'synthetic-benchmark'),
     ('gfxbench5_car_chase_windowed',                'synthetic-benchmark'),
