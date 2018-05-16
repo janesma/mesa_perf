@@ -49,6 +49,9 @@
     <project name="mesa_bxt"/>
     <project name="mesa_kbl"/>
     
+    <project name="aztec_ruins_gl_normal_o">
+      <prerequisite name="mesa-perf" hardware="builder"/>
+    </project>
     <project name="aztec_ruins_gl_normal">
       <prerequisite name="mesa-perf" hardware="builder"/>
     </project>
@@ -100,6 +103,7 @@
       <prerequisite name="trex_o" hardware="bxt505-02,kblgt2-01,sklgt2-02,sklgt4e-01"/>
       <prerequisite name="trex" hardware="bxt500-01,bxt505-04,kblgt2-02,sklgt2-03,sklgt4e-05"/>
       <prerequisite name="aztec_ruins_gl_normal" hardware="bdwgt3e-01,bxt500-01,bxt505-03,kblgt2-02,sklgt2-04,sklgt4e-01"/>
+      <prerequisite name="aztec_ruins_gl_normal_o" hardware="bdwgt3e-01,bxt500-01,bxt505-03,kblgt2-02,sklgt2-04,sklgt4e-01"/>
       <prerequisite name="tess" hardware="bxt500-01,bxt505-05,kblgt2-01,sklgt2-03,sklgt2-04,sklgt4e-01"/>
       <prerequisite name="manhattan_o" hardware="bdwgt3e-01,bsw-01,bxt500-02,bxt505-04,kblgt2-02,sklgt2-01,sklgt4e-01"/>
       <prerequisite name="manhattan" hardware="bdwgt3e-01,bsw-01,bxt500-01,bxt505-05,kblgt2-01,sklgt2-01,sklgt4e-01"/>

@@ -17,6 +17,6 @@ class ManhattanTimeout:
             base_time = base_time * 5
         return base_time
 
-bs.build(bs.PerfBuilder("gfxbench5.manhattan", iterations=5),
+bs.build(bs.PerfBuilder("gfxbench5.manhattan", iterations=3),
          time_limit=ManhattanTimeout())
 
